@@ -60,7 +60,7 @@ public class MessageResource {
 		   outputStream.close();
 	   } 
 	   
-	   URI l = new URI (App.getHostPrefix() + App.APPLICATION_PATH + "/v1/"+ fileId);
+	   URI l = new URI (App.getHostPrefix() + fileId);
 
 	   return Response.created(l).entity(l).build();	
 	}
